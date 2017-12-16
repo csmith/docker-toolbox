@@ -2,6 +2,7 @@ FROM debian:buster-slim
 
 RUN apt-get -qq update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends \
+	iproute2 \
 	tcpdump \
 	strace \
 	dnsutils \
